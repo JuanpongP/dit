@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      #datepicker::placeholder {
+        color: #f6f6f6;
+        font-size: 20px;
+      }
+      #floatingTextarea2::placeholder {
+        color: #a6b0cf;
+        font-size: 20px;
+      }
+      #lastName {
+        padding: 15px;
+      }
+      #firstName {
+        padding: 15px;
+      }
+      #lastName::placeholder {
+        color: #a6b0cf;
+        font-size: 18px;
+      }
+      #firstName::placeholder {
+        color: #a6b0cf;
+        font-size: 18px;
+      }
+      #signature-container {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      #signature-pad {
+        width: 100%;
+        height: 250px;
+      }
+      .wrapper {
+        max-width: 100%;
+        height: auto;
+        text-align: start;
+      }
+
+      .wrapper img {
+        max-width: 100%;
+        height: auto;
+      }
+      .label-icon {
+        width: 24px;
+        margin-right: 10px;
+      }
+
+      .form-label {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body style="background-color: #222736" class="fs-5">
+    <div class="list-group m-4">
+      <div
+        class="list-group-item list-group-item-action d-flex gap-3 py-3 rounded shadow-sm border-0"
+        style="background-color: #2a3042; color: #f6f6f6"
+      >
+        <div class="col-md-7 col-lg-8 w-100">
+          <h4 class="mb-1 fw-semibold">
+            <i class="fa-solid fa-cart-shopping"></i>
+            ยืนยันรับสินค้าปลายทาง
+          </h4>
+          <hr class="my-2 mb-3" />
+          <div
+            class="list-group-item list-group-item-action d-flex gap-3 py-3 rounded border-warning bg-warning-subtle"
+          >
+            <div class="d-flex gap-2 w-100 justify-content-between fw-medium">
+              <div>
+                <h4 class="mb-0">สำคัญ</h4>
+                <p class="mb-0">
+                  ก่อนที่จะดำเนินการกรอกข้อมูล ต้องดำเนินการเปิดการใช้งาน
+                  Location service
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="d-flex align-items-center">
+            <i class="fa-regular fa-clock pe-3"></i>
+            <label
+              for="firstName"
+              class="form-label fw-medium py-2 text-success m-0"
+            >
+              <b>ระยะเวลาที่อนุญาตให้ขนย้าย</b>
+            </label>
+          </div>
+          <br />
+          <label for="firstName" class="form-label fw-medium py-2 text-success">
+            <b> ส.ค. 2566 13:00 - 31 ส.ค. 2566 16:00</b>
+          </label>
+          <br />
+          <div class="d-flex align-items-center">
+            <i class="fa-regular fa-clock pe-3"></i>
+            <label
+              for="firstName"
+              class="form-label fw-medium py-2 text-success m-0"
+            >
+              <b>
+                เนื่องจากมีเหตุขัดข้อง ขยายระยะเวลาที่อนุญาตให้ขนย้าย เป็น
+              </b>
+            </label>
+          </div>
+          <br />
+          <label for="firstName" class="form-label fw-medium py-2">
+            <b>-</b>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-group m-4">
+      <div
+        class="list-group-item list-group-item-action d-flex gap-3 py-3 rounded shadow-sm border-0"
+        style="background-color: #2a3042; color: #f6f6f6"
+      >
+        <div class="col-md-7 col-lg-8 w-100">
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <h4 class="my-2 fw-semibold">
+                <i class="fa-regular fa-money-check-pen"></i>
+                ผู้รับปลายทาง
+              </h4>
+              <hr class="my-0" />
+
+              <div class="col-sm-12">
+                <label for="firstName" class="form-label fw-medium pt-3 pb-2">
+                  <i class="fa-solid fa-user"></i>
+                  ชื่อ - นามสกุล หรือ ผู้ประกอบการ *
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  placeholder="ชื่อ - นามสกุล หรือ ผู้ประกอบการ"
+                  value=""
+                  required=""
+                  style="
+                    border-color: #32394e;
+                    background-color: #2a3042;
+                    border-width: 4px;
+                    color: #f6f6f6;
+                    font-weight: 500;
+                  "
+                />
+              </div>
+
+              <div class="col-sm-12">
+                <label for="lastName" class="form-label fw-medium pb-2">
+                  <i class="fa-solid fa-camera-retro"></i>
+                  เลขประจำตัวประชาชน หรือ ทะเบียนนิติบุคคล *
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder="เลขประจำตัวประชาชน หรือ ทะเบียนนิติบุคคล"
+                  value=""
+                  required=""
+                  style="
+                    border-color: #32394e;
+                    background-color: #2a3042;
+                    border-width: 4px;
+                    color: #f6f6f6;
+                    font-weight: 500;
+                  "
+                />
+              </div>
+              <div class="col-sm-12">
+                <label for="firstName" class="form-label fw-medium pb-2">
+                  <i class="fa-solid fa-credit-card-front"></i>
+                  บัตรประจำตัวประชาชน
+                </label>
+                <div class="col-12 col-md-3">
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="firstName"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <label for="firstName" class="form-label fw-medium pb-2">
+                  <i class="fa-solid fa-truck fa-flip-horizontal"></i>
+                  ยานพาหนะ
+                </label>
+                <div class="col-12 col-md-3">
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="firstName"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                </div>
+                <label
+                  for="firstName"
+                  class="form-label"
+                  style="color: #a6b0cf"
+                >
+                  ภาพถ่ายยานพาหนะที่ใช้ในการขนย้ายซึ่งมองเห็นหมายเลขทะเบียนอย่างชัดเจน
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-group m-4">
+      <div
+        class="list-group-item list-group-item-action d-flex gap-3 py-3 rounded shadow-sm border-0"
+        style="background-color: #2a3042; color: #f6f6f6"
+      >
+        <div class="col-md-7 col-lg-8 w-100">
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <h4 class="my-2 fw-semibold">
+                <i class="fa-solid fa-hand-holding-box"></i>
+                ระบุวิธีการรับสินค้า
+              </h4>
+              <hr class="my-0" />
+              <div class="mb-3">
+                <div class="form-check">
+                  <input
+                    id="vehicle1"
+                    name="vehicle"
+                    type="radio"
+                    class="form-check-input"
+                    checked=""
+                    required=""
+                    value="1"
+                  />
+                  <label class="form-check-label" for="vehicle1">
+                    <i class="fa-sharp fa-solid fa-file-signature"></i>
+                    ผู้รับปลายทางเซ็นผ่านระบบ</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    id="vehicle2"
+                    name="vehicle"
+                    type="radio"
+                    class="form-check-input"
+                    required=""
+                    value="2"
+                  />
+                  <label class="form-check-label" for="vehicle2"
+                    ><i class="fa-solid fa-folder-arrow-up pe-2"></i
+                    >อัพโหลดต้นฉบับหนังสืออนุญาตที่มีลายเซ็นผู้รับปลายทาง</label
+                  >
+                </div>
+                <div id="signature-container" class="flex-row">
+                  <div class="wrapper">
+                    <label for="fileInput" class="form-label fw-medium py-3">
+                      <i class="fa-sharp fa-solid fa-file-signature"></i>
+                      ลายเซ็นปลายทาง
+                    </label>
+                    <canvas
+                      id="signature-pad"
+                      width="400"
+                      height="200"
+                    ></canvas>
+                  </div>
+                  <div class="clear-btn pt-2 d-flex justify-content-end">
+                    <button class="btn btn-success btn-lg" id="clear">
+                      <span
+                        ><i class="fa-sharp fa-solid fa-trash pe-2"></i
+                        >ลบลายเซ็น</span
+                      >
+                    </button>
+                    <button class="btn btn-success btn-lg ms-2" id="clear">
+                      <span
+                        ><i class="fa-sharp fa-solid fa-download pe-2"></i
+                        >บันทึกลายเซ็น</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div id="file-upload-container" class="col-sm-12">
+                  <label for="fileInput" class="form-label fw-medium py-3">
+                    <i class="fa-solid fa-folder-arrow-up pe-2"></i>
+                    ต้นฉบับหนังสืออนุญาต ที่ มีลายเซ็นผู้รับปลายทาง
+                  </label>
+                  <div class="col-12 col-md-3">
+                    <input
+                      type="file"
+                      class="form-control"
+                      id="firstName"
+                      placeholder=""
+                      value=""
+                      required=""
+                    />
+                  </div>
+                </div>
+                <div id="result"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-group m-4">
+      <div
+        class="list-group-item list-group-item-action d-flex gap-3 py-3 rounded shadow-sm border-0"
+        style="background-color: #2a3042; color: #f6f6f6"
+      >
+        <div class="col-md-7 col-lg-8 w-100">
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <h4 class="my-2 fw-semibold">
+                <i class="fa-sharp fa-solid fa-truck-container"></i>
+                ระบุทะเบียนยานพาหนะ
+              </h4>
+              <hr class="my-0" />
+              <div class="mb-3">
+                <div class="form-check">
+                  <input
+                    id="signatureOption"
+                    name="deliveryMethod"
+                    type="radio"
+                    class="form-check-input"
+                    checked=""
+                    required=""
+                    value="1"
+                  />
+                  <label class="form-check-label" for="signatureOption"
+                    ><i
+                      class="fa-sharp fa-solid fa-binary-circle-check pe-2"
+                    ></i
+                    >เลขทะเบียนยานพาหนะตรงกับหนังสืออนุญาตขนย้าย</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    id="uploadOption"
+                    name="deliveryMethod"
+                    type="radio"
+                    class="form-check-input"
+                    required=""
+                    value="2"
+                  />
+                  <label class="form-check-label" for="uploadOption"
+                    ><i
+                      class="fa-sharp fa-regular fa-sensor-triangle-exclamation pe-2"
+                    ></i
+                    >เลขทะเบียนยานพาหนะไม่ตรงกับหนังสืออนุญาตขนย้าย</label
+                  >
+                </div>
+                <div
+                  id="signatureContent"
+                  class="flex-row"
+                  style="display: none"
+                >
+                  <div>
+                    <label for="fileInput" class="form-label fw-medium py-3">
+                      <i class="fas fa-truck fa-flip-horizontal"></i>
+                      ยานพาหนะ
+                    </label>
+                    <div class="wrapper">
+                      <img
+                        src="https://i.pinimg.com/564x/79/cb/08/79cb08484080b97e95800f5fb62ad716.jpg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div id="uploadContent" class="col-sm-12" style="display: none">
+                  <label for="fileInput" class="form-label fw-medium py-3">
+                    <i class="fa-solid fa-folder-arrow-up pe-2"></i>
+                    ยานพาหนะ
+                  </label>
+                  <div class="col-12 col-md-3">
+                    <input
+                      type="file"
+                      class="form-control"
+                      id="firstName"
+                      placeholder=""
+                      value=""
+                      required=""
+                    />
+                  </div>
+                  <label
+                    for="firstName"
+                    class="form-label"
+                    style="color: #a6b0cf"
+                  >
+                    ภาพถ่ายยานพาหนะที่ใช้ในการขนย้ายซึ่งมองเห็นหมายเลขทะเบียนอย่างชัดเจน
+                  </label>
+                </div>
+                <div id="result"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-group m-4">
+      <div
+        class="list-group-item list-group-item-action d-flex gap-3 py-3 rounded shadow-sm border-0"
+        style="background-color: #2a3042; color: #f6f6f6"
+      >
+        <div class="col-md-7 col-lg-8 w-100">
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <h5 class="mb-1 fw-semibold">
+                <i class="fa-solid fa-gift"></i>
+                ยืนยันรับสินค้าปลายทาง
+              </h5>
+              <hr class="my-0" />
+              <div class="col-sm-12">
+                <span
+                  class="badge d-flex align-items-center my-2 mt-0 p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded p-3"
+                  style="overflow: hidden"
+                >
+                  <i class="fa-solid fa-earth-asia pe-2"></i>
+                  <span class="text-success fs-5">
+                    เปิดดู พิกัด สถานที่เกิดเหตุขัดข้อง (แบบเรียลไทม์)
+                  </span>
+                </span>
+
+                <label for="firstName" class="form-label fw-medium py-2">
+                  <i class="fa-solid fa-briefcase"></i>
+                  ยืนยันรับสินค้าปลายทาง
+                </label>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input
+                      id="credit"
+                      name="paymentMethod"
+                      type="radio"
+                      class="form-check-input"
+                      checked=""
+                      required=""
+                    />
+                    <label class="form-check-label text-success" for="credit">
+                      ได้รับสินค้า ตามชนิด ขนาด เกรด และ
+                      ปริมาณที่ระบุไว้ในหนังสืออนุญาตการขนย้าย ถูกต้อง ครบถ้วน
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      id="debit"
+                      name="paymentMethod"
+                      type="radio"
+                      class="form-check-input"
+                      required=""
+                    />
+                    <label class="form-check-label text-danger" for="debit">
+                      ผู้รับปลายทางไม่รับสินค้า
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-group m-4">
+      <div
+        class="list-group-item list-group-item-action d-flex gap-3 py-3 rounded shadow-sm border-0"
+        style="background-color: #2a3042; color: #f6f6f6"
+      >
+        <div class="col-md-7 col-lg-8 w-100">
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <h5 class="mb-1 fw-semibold">
+                <i class="fa-solid fa-bell-exclamation"></i>
+                กรณีผู้รับปลายทางไม่รับสินค้า
+              </h5>
+              <hr class="my-0" />
+              <div class="col-sm-12">
+                <label for="firstName" class="form-label fw-medium py-2">
+                  <i class="fa-sharp fa-solid fa-comments"></i>
+                  เหตุผลการรับไม่รับสินค้า
+                </label>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    placeholder="ไม่สามารถรับสินค้าปลายทาง"
+                    id="floatingTextarea2"
+                    style="
+                      height: 100px;
+                      border-color: #32394e;
+                      background-color: #2a3042;
+                      border-width: 4px;
+                    "
+                  ></textarea>
+                </div>
+              </div>
+              <hr class="my-4" />
+
+              <button class="w-100 btn btn-success btn-lg" type="submit">
+                <i class="fa-sharp fa-solid fa-floppy-disk"></i>
+                <b>บันทึก</b>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/406e0e33d1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const vehicle1Input = document.getElementById('vehicle1');
+      const vehicle2Input = document.getElementById('vehicle2');
+      const signatureContainer = document.getElementById('signature-container');
+      const fileUploadContainer = document.getElementById(
+        'file-upload-container'
+      );
+
+      fileUploadContainer.style.display = 'none';
+
+      vehicle1Input.addEventListener('change', () => {
+        if (vehicle1Input.checked) {
+          signatureContainer.style.display = 'block';
+          fileUploadContainer.style.display = 'none';
+        }
+      });
+
+      vehicle2Input.addEventListener('change', () => {
+        if (vehicle2Input.checked) {
+          signatureContainer.style.display = 'none';
+          fileUploadContainer.style.display = 'block';
+        }
+      });
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js"
+      integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      var canvas = document.getElementById('signature-pad');
+
+      function resizeCanvas() {
+        var ratio = Math.max(window.devicePixelRatio || 1, 1);
+        canvas.width = canvas.offsetWidth * ratio;
+        canvas.height = canvas.offsetHeight * ratio;
+        canvas.getContext('2d').scale(ratio, ratio);
+      }
+      window.onresize = resizeCanvas;
+      resizeCanvas();
+
+      var signaturePad = new SignaturePad(canvas, {
+        backgroundColor: 'rgb(250,250,250)',
+      });
+
+      document.getElementById('clear').addEventListener('click', function () {
+        signaturePad.clear();
+      });
+    </script>
+
+    <script>
+      const signatureOption = document.getElementById('signatureOption');
+      const uploadOption = document.getElementById('uploadOption');
+      const signatureContent = document.getElementById('signatureContent');
+      const uploadContent = document.getElementById('uploadContent');
+
+      signatureContent.style.display = 'block';
+      signatureOption.addEventListener('change', () => {
+        signatureContent.style.display = 'block';
+        uploadContent.style.display = 'none';
+      });
+
+      uploadOption.addEventListener('change', () => {
+        signatureContent.style.display = 'none';
+        uploadContent.style.display = 'block';
+      });
+    </script>
+  </body>
+</html>
