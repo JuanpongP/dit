@@ -26,11 +26,11 @@
       }
       #lastName::placeholder {
         color: #a6b0cf;
-        font-size: 18px;
+        font-size: 17px;
       }
       #firstName::placeholder {
         color: #a6b0cf;
-        font-size: 18px;
+        font-size: 17px;
       }
       #signature-container {
         width: 100%;
@@ -72,7 +72,10 @@
       >
         <div class="col-md-7 col-lg-8 w-100">
           <h4 class="mb-1 fw-mediumm">
-            <i class="fa-solid fa-triangle-exclamation"></i>
+            <i
+              style="color: #ee2020"
+              class="fa-solid fa-triangle-exclamation"
+            ></i>
             คำขอเหตุการแจ้งเหตุขัดข้อง
           </h4>
           <hr class="my-2 mb-3" />
@@ -84,7 +87,7 @@
                 <h4 class="mb-0">
                   <b>สำคัญ</b>
                 </h4>
-                <p class="mb-0">
+                <p class="mb-0 fs-5">
                   ก่อนที่จะดำเนินการกรอกข้อมูล ต้องดำเนินการเปิดการใช้งาน
                   Location service
                 </p>
@@ -104,13 +107,16 @@
           <form class="needs-validation" novalidate="">
             <div class="row g-3">
               <h4 class="my-2 fw-mediumm">
-                <i class="fa-solid fa-money-check-pen"></i>
+                <i
+                  style="color: #556ee6"
+                  class="fa-solid fa-money-check-pen"
+                ></i>
                 ผู้แจ้งเหตุขัดข้อง
               </h4>
               <hr class="my-0" />
               <div class="col-sm-12">
-                <label for="firstName" class="form-label fw-medium pt-3 pb-2">
-                  <i class="fa-solid fa-user"></i>
+                <label for="firstName" class="form-label fw-medium pt-3 pb-3">
+                  <i style="color: #00bcd4" class="fa-solid fa-user"></i>
 
                   ชื่อ - นามสกุล *</label
                 >
@@ -129,8 +135,8 @@
                 />
               </div>
               <div class="col-sm-12">
-                <label for="lastName" class="form-label fw-medium pb-2">
-                  <i class="fa-solid fa-id-card"></i>
+                <label for="lastName" class="form-label fw-medium pb-3">
+                  <i style="color: #03a9f4" class="fa-solid fa-id-card"></i>
                   เลขประจำตัวประชาชน *</label
                 >
                 <input
@@ -162,13 +168,16 @@
           <form class="needs-validation" novalidate="">
             <div class="row g-3">
               <h4 class="mb-1 fw-mediumm">
-                <i class="fa-solid fa-comment-question"></i>
+                <i
+                  style="color: #039be5"
+                  class="fa-solid fa-comment-question"
+                ></i>
                 เหตุขัดข้อง *
               </h4>
               <hr class="my-0" />
               <div class="col-sm-12">
                 <textarea
-                  class="form-control"
+                  class="form-control mt-2 mb-1"
                   placeholder="เหตุขัดข้อง"
                   id="floatingTextarea2"
                   style="
@@ -179,7 +188,7 @@
                   "
                 ></textarea>
                 <span
-                  class="badge d-flex align-items-center my-2 p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded p-3"
+                  class="badge d-flex align-items-center my-3 p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded p-3"
                   style="overflow: hidden"
                 >
                   <i class="fa-solid fa-earth-asia pe-2 fs-5 text-success"></i>
@@ -188,8 +197,11 @@
                     >เปิดดู พิกัด สถานที่เกิดเหตุขัดข้อง (แบบเรียลไทม์)</span
                   >
                 </span>
-                <label for="firstName" class="form-label fw-medium pb-2 pt-2">
-                  <i class="fa-solid fa-map-location"></i>
+                <label for="firstName" class="form-label fw-medium pb-3 pt-2">
+                  <i
+                    style="color: #2baf2b"
+                    class="fa-solid fa-map-location"
+                  ></i>
                   สถานที่เกิดเหตุขัดข้อง</label
                 >
                 <input
@@ -205,15 +217,15 @@
                     border-width: 4px;
                   "
                 />
-                <label for="firstName" class="form-label pt-4 fw-medium">
-                  <i class="fa-solid fa-clock"></i>
+                <label for="firstName" class="form-label pb-3 pt-4 fw-medium">
+                  <i style="color: #bebebe" class="fa-solid fa-clock"></i>
                   ขอขยายระยะเวลาขนย้าย</label
                 >
 
                 <div class="col-md-12 mb-3">
                   <label
                     for="firstName"
-                    class="form-label pt-2 col-12 col-md-3 fw-medium"
+                    class="form-label pb-3 pt-2 col-12 col-md-3 fw-medium"
                     >เริ่มต้น</label
                   >
                   <input
@@ -246,7 +258,7 @@
                 <div class="col-md-12 mb-3">
                   <label
                     for="firstName"
-                    class="form-label pt-2 col-12 col-md-3 fw-medium"
+                    class="form-label pb-3 pt-2 col-12 col-md-3 fw-medium"
                     >สิ้นสุด</label
                   >
                   <input
@@ -290,13 +302,19 @@
           <form class="needs-validation" novalidate="">
             <div class="row g-3">
               <h4 class="mb-1 fw-mediumm">
-                <i class="fa-solid fa-truck-ramp-couch"></i>
+                <i
+                  style="color: #ffeb3b"
+                  class="fa-solid fa-truck-ramp-couch"
+                ></i>
                 ยานพาหนะ และ ผู้ขับขี่ ขณะเกิดเหตุขัดข้อง
               </h4>
               <hr class="my-0" />
               <div class="col-sm-12">
-                <label for="firstName" class="form-label fw-medium pt-3 pb-2">
-                  <i class="fa-solid fa-truck fa-flip-horizontal"></i>
+                <label for="firstName" class="form-label fw-medium pt-3 pb-3">
+                  <i
+                    style="color: #ff5722"
+                    class="fa-solid fa-truck fa-flip-horizontal"
+                  ></i>
                   เลขทะเบียนยานพาหนะ</label
                 >
                 <input
@@ -314,8 +332,11 @@
                 />
               </div>
               <div class="col-sm-12">
-                <label for="lastName" class="form-label fw-medium pb-2">
-                  <i class="fa-solid fa-credit-card-front"></i>
+                <label for="lastName" class="form-label fw-medium pb-3">
+                  <i
+                    style="color: #c4bcac"
+                    class="fa-solid fa-credit-card-front"
+                  ></i>
                   ใบอนุญาตขับขี่</label
                 >
                 <input
@@ -347,13 +368,19 @@
           <form class="needs-validation" novalidate="">
             <div class="row g-3">
               <h4 class="mb-1 fw-mediumm">
-                <i class="fa-sharp fa-solid fa-gears"></i>
+                <i
+                  style="color: #c41411"
+                  class="fa-sharp fa-solid fa-gears"
+                ></i>
                 กรณีมีความจำเป็นต้องเปลี่ยนแปลง ยานพาหนะหรือผู้ขับขี่ในการขนย้าย
               </h4>
               <hr class="my-0" />
               <div class="col-sm-12">
-                <label for="firstName" class="form-label fw-medium pt-3 pb-2">
-                  <i class="fa-solid fa-truck fa-flip-horizontal"></i>
+                <label for="firstName" class="form-label fw-medium pt-3 pb-3">
+                  <i
+                    style="color: #ff5722"
+                    class="fa-solid fa-truck fa-flip-horizontal"
+                  ></i>
                   เลขทะเบียนยานพาหนะ (ยานพาหนะคันใหม่)</label
                 >
                 <input
@@ -371,8 +398,11 @@
                 />
               </div>
               <div class="col-sm-12">
-                <label for="lastName" class="form-label fw-medium pb-2">
-                  <i class="fa-solid fa-credit-card-front"></i>
+                <label for="lastName" class="form-label fw-medium pb-3">
+                  <i
+                    style="color: #c4bcac"
+                    class="fa-solid fa-credit-card-front"
+                  ></i>
                   ใบอนุญาตขับขี่ (ผู้ขับขี่คนใหม่)</label
                 >
                 <input
@@ -404,13 +434,13 @@
           <form class="needs-validation" novalidate="">
             <div class="row g-3">
               <h4 class="mb-1 fw-mediumm">
-                <i class="fa-solid fa-users"></i>
+                <i style="color: #6495ed" class="fa-solid fa-users"></i>
                 พยาน
               </h4>
               <hr class="my-0" />
               <div class="col-sm-12">
-                <label for="firstName" class="form-label fw-medium pt-3 pb-2">
-                  <i class="fa-solid fa-user"></i>
+                <label for="firstName" class="form-label fw-medium pt-3 pb-3">
+                  <i style="color: #00bcd4" class="fa-solid fa-user"></i>
                   ชื่อ - นามสกุล พยาน</label
                 >
                 <input
@@ -428,8 +458,8 @@
                 />
               </div>
               <div class="col-sm-12">
-                <label for="lastName" class="form-label fw-medium pb-2">
-                  <i class="fa-solid fa-id-card"></i>
+                <label for="lastName" class="form-label fw-medium pb-3">
+                  <i style="color: #03a9f4" class="fa-solid fa-id-card"></i>
                   เลขประจำตัวประชาชน พยาน</label
                 >
                 <input
@@ -461,15 +491,18 @@
           <form class="needs-validation" novalidate="">
             <div class="row g-3">
               <h4 class="mb-1 fw-mediumm">
-                <i class="fa-solid fa-user-magnifying-glass"></i>
+                <i
+                  style="color: #ec407a"
+                  class="fa-solid fa-user-magnifying-glass"
+                ></i>
                 หลักฐาน ขณะเกิดเหตุขัดข้อง (<span class="text-danger"
                   >อัพโหลดเฉพาะไฟล์ .jpg</span
                 >)
               </h4>
               <hr class="my-0" />
               <div class="col-sm-12">
-                <label for="firstName" class="form-label fw-medium pt-3 pb-2">
-                  <i class="fa-solid fa-image"></i>
+                <label for="firstName" class="form-label fw-medium pt-3 pb-3">
+                  <i style="color: #9ccc65" class="fa-solid fa-image"></i>
                   ภาพถ่ายของเอกสารหรือหลักฐานแสดงถึงเหตุขัดข้อง</label
                 >
                 <div class="col-12 col-md-3">
@@ -484,8 +517,8 @@
                 </div>
               </div>
               <div class="col-sm-12">
-                <label for="firstName" class="form-label fw-medium pb-2">
-                  <i class="fa-solid fa-camera"></i>
+                <label for="firstName" class="form-label fw-medium pb-3">
+                  <i style="color: #bdbdbd" class="fa-solid fa-camera"></i>
                   ภาพถ่ายสถานที่เกิดเหตุ</label
                 >
                 <div class="col-12 col-md-3">
@@ -500,8 +533,11 @@
                 </div>
               </div>
               <div class="col-sm-12">
-                <label for="firstName" class="form-label fw-medium pb-2">
-                  <i class="fa-solid fa-truck fa-flip-horizontal"></i>
+                <label for="firstName" class="form-label fw-medium pb-3">
+                  <i
+                    style="color: #ff5722"
+                    class="fa-solid fa-truck fa-flip-horizontal"
+                  ></i>
                   ยานพาหนะ ซึ่งใช้ในขณะเกิดเหตุขัดข้อง</label
                 >
                 <div class="col-12 col-md-3">
@@ -516,15 +552,18 @@
                 </div>
                 <label
                   for="firstName"
-                  class="form-label"
+                  class="form-label fs-6"
                   style="color: #a6b0cf"
                 >
                   ภาพถ่ายยานพาหนะที่ใช้ในการขนย้ายซึ่งมองเห็นหมายเลขทะเบียนอย่างชัดเจน
                 </label>
               </div>
               <div class="col-sm-12">
-                <label for="firstName" class="form-label fw-medium pb-2">
-                  <i class="fa-solid fa-credit-card-front"></i>
+                <label for="firstName" class="form-label fw-medium pb-3">
+                  <i
+                    style="color: #c4bcac"
+                    class="fa-solid fa-credit-card-front"
+                  ></i>
                   ใบอนุญาตขับขี่ ซึ่งใช้ในขณะเกิดเหตุขัดข้อง</label
                 >
                 <div class="col-12 col-md-3">
@@ -553,7 +592,10 @@
           <form class="needs-validation" novalidate="">
             <div class="row g-3">
               <h4 class="mb-1 fw-mediumm">
-                <i class="fa-solid fa-swap fa-rotate-90"></i>
+                <i
+                  style="color: #78909c"
+                  class="fa-solid fa-swap fa-rotate-90"
+                ></i>
                 หลักฐาน กรณีมีการเปลี่ยนแปลง ยานพาหนะ หรือ ผู้ขับขี่ (<span
                   class="text-danger"
                   >อัพโหลดเฉพาะไฟล์ .jpg</span
@@ -561,8 +603,11 @@
               </h4>
               <hr class="my-0" />
               <div class="col-sm-12">
-                <label for="firstName" class="form-label fw-medium pt-3 pb-2">
-                  <i class="fa-solid fa-truck fa-flip-horizontal"></i>
+                <label for="firstName" class="form-label fw-medium pt-3 pb-3">
+                  <i
+                    style="color: #ff5722"
+                    class="fa-solid fa-truck fa-flip-horizontal"
+                  ></i>
                   ยานพาหนะ คันใหม่</label
                 >
                 <div class="col-12 col-md-3">
@@ -575,13 +620,19 @@
                     required=""
                   />
                 </div>
-                <label for="firstName" class="form-label" style="color: #a6b0cf"
+                <label
+                  for="firstName"
+                  class="form-label fs-6"
+                  style="color: #a6b0cf"
                   >ภาพถ่ายยานพาหนะที่ใช้ในการขนย้ายซึ่งมองเห็นหมายเลขทะเบียนอย่างชัดเจน</label
                 >
               </div>
               <div class="col-sm-12">
-                <label for="firstName" class="form-label fw-medium pb-2">
-                  <i class="fa-solid fa-credit-card-front"></i>
+                <label for="firstName" class="form-label fw-medium pb-3">
+                  <i
+                    style="color: #c4bcac"
+                    class="fa-solid fa-credit-card-front"
+                  ></i>
                   ใบอนุญาตขับขี่ ผู้ขับขี่คนใหม่</label
                 >
                 <div class="col-12 col-md-3">

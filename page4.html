@@ -26,11 +26,11 @@
       }
       #lastName::placeholder {
         color: #a6b0cf;
-        font-size: 18px;
+        font-size: 17px;
       }
       #firstName::placeholder {
         color: #a6b0cf;
-        font-size: 18px;
+        font-size: 17px;
       }
       #signature-container {
         width: 100%;
@@ -72,7 +72,7 @@
       >
         <div class="col-md-7 col-lg-8 w-100">
           <h4 class="mb-1 fw-mediumm">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i style="color: #9292d1" class="fa-solid fa-cart-shopping"></i>
             ยืนยันรับสินค้าปลายทาง
           </h4>
           <hr class="my-2 mb-3" />
@@ -82,7 +82,7 @@
             <div class="d-flex gap-2 w-100 justify-content-between fw-medium">
               <div>
                 <h4 class="mb-0"><b>สำคัญ</b></h4>
-                <p class="mb-0">
+                <p class="mb-0 fs-5">
                   ก่อนที่จะดำเนินการกรอกข้อมูล ต้องดำเนินการเปิดการใช้งาน
                   Location service
                 </p>
@@ -91,24 +91,30 @@
           </div>
           <br />
           <div class="d-flex align-items-center">
-            <i class="fa-regular fa-clock pe-3"></i>
+            <i style="color: #e0e0e0" class="fa-regular fa-clock pe-3"></i>
             <label
               for="firstName"
-              class="form-label fw-medium py-2 text-success m-0"
+              class="form-label fw-medium py-2 m-0"
+              style="color: #72d572"
             >
               <b>ระยะเวลาที่อนุญาตให้ขนย้าย</b>
             </label>
           </div>
           <br />
-          <label for="firstName" class="form-label fw-medium py-2 text-success">
+          <label
+            for="firstName"
+            class="form-label fw-medium py-2"
+            style="color: #72d572"
+          >
             <b> ส.ค. 2566 13:00 - 31 ส.ค. 2566 16:00</b>
           </label>
           <br />
           <div class="d-flex align-items-center">
-            <i class="fa-regular fa-clock pe-3"></i>
+            <i style="color: #e0e0e0" class="fa-regular fa-clock pe-3"></i>
             <label
               for="firstName"
-              class="form-label fw-medium py-2 text-success m-0"
+              class="form-label fw-medium py-2 m-0"
+              style="color: #72d572"
             >
               <b>
                 เนื่องจากมีเหตุขัดข้อง ขยายระยะเวลาที่อนุญาตให้ขนย้าย เป็น
@@ -132,14 +138,17 @@
           <form class="needs-validation" novalidate="">
             <div class="row g-3">
               <h4 class="my-2 fw-mediumm">
-                <i class="fa-regular fa-money-check-pen"></i>
+                <i
+                  style="color: #039be5"
+                  class="fa-solid fa-money-check-pen"
+                ></i>
                 ผู้รับปลายทาง
               </h4>
               <hr class="my-0" />
 
               <div class="col-sm-12">
-                <label for="firstName" class="form-label fw-medium pt-3 pb-2">
-                  <i class="fa-solid fa-user"></i>
+                <label for="firstName" class="form-label fw-medium pt-3 pb-3">
+                  <i style="color: #00bcd4" class="fa-solid fa-user"></i>
                   ชื่อ - นามสกุล หรือ ผู้ประกอบการ *
                 </label>
                 <input
@@ -160,8 +169,8 @@
               </div>
 
               <div class="col-sm-12">
-                <label for="lastName" class="form-label fw-medium pb-2">
-                  <i class="fa-solid fa-camera-retro"></i>
+                <label for="lastName" class="form-label fw-medium pb-3">
+                  <i style="color: #03a9f4" class="fa-solid fa-id-card"></i>
                   เลขประจำตัวประชาชน หรือ ทะเบียนนิติบุคคล *
                 </label>
                 <input
@@ -181,8 +190,11 @@
                 />
               </div>
               <div class="col-sm-12">
-                <label for="firstName" class="form-label fw-medium pb-2">
-                  <i class="fa-solid fa-credit-card-front"></i>
+                <label for="firstName" class="form-label fw-medium pb-3">
+                  <i
+                    style="color: #c4bcac"
+                    class="fa-solid fa-credit-card-front"
+                  ></i>
                   บัตรประจำตัวประชาชน
                 </label>
                 <div class="col-12 col-md-3">
@@ -197,8 +209,11 @@
                 </div>
               </div>
               <div class="col-sm-12">
-                <label for="firstName" class="form-label fw-medium pb-2">
-                  <i class="fa-solid fa-truck fa-flip-horizontal"></i>
+                <label for="firstName" class="form-label fw-medium pb-3">
+                  <i
+                    style="color: #ff5722"
+                    class="fa-solid fa-truck fa-flip-horizontal"
+                  ></i>
                   ยานพาหนะ
                 </label>
                 <div class="col-12 col-md-3">
@@ -213,7 +228,7 @@
                 </div>
                 <label
                   for="firstName"
-                  class="form-label"
+                  class="form-label fs-6"
                   style="color: #a6b0cf"
                 >
                   ภาพถ่ายยานพาหนะที่ใช้ในการขนย้ายซึ่งมองเห็นหมายเลขทะเบียนอย่างชัดเจน
@@ -234,7 +249,10 @@
           <form class="needs-validation" novalidate="">
             <div class="row g-3">
               <h4 class="my-2 fw-mediumm">
-                <i class="fa-solid fa-hand-holding-box"></i>
+                <i
+                  style="color: #e95deb"
+                  class="fa-solid fa-hand-holding-box"
+                ></i>
                 ระบุวิธีการรับสินค้า
               </h4>
               <hr class="my-0" />
@@ -250,7 +268,10 @@
                     value="1"
                   />
                   <label class="form-check-label" for="vehicle1">
-                    <i class="fa-sharp fa-solid fa-file-signature"></i>
+                    <i
+                      style="color: #bdbdbd"
+                      class="fa-sharp fa-solid fa-file-signature"
+                    ></i>
                     ผู้รับปลายทางเซ็นผ่านระบบ</label
                   >
                 </div>
@@ -264,14 +285,20 @@
                     value="2"
                   />
                   <label class="form-check-label" for="vehicle2"
-                    ><i class="fa-solid fa-folder-arrow-up pe-2"></i
+                    ><i
+                      style="color: #ffb74d"
+                      class="fa-solid fa-folder-arrow-up pe-2"
+                    ></i
                     >อัพโหลดต้นฉบับหนังสืออนุญาตที่มีลายเซ็นผู้รับปลายทาง</label
                   >
                 </div>
                 <div id="signature-container" class="flex-row">
                   <div class="wrapper">
                     <label for="fileInput" class="form-label fw-medium py-3">
-                      <i class="fa-sharp fa-solid fa-file-signature"></i>
+                      <i
+                        style="color: #bdbdbd"
+                        class="fa-sharp fa-solid fa-file-signature"
+                      ></i>
                       ลายเซ็นปลายทาง
                     </label>
                     <canvas
@@ -281,17 +308,33 @@
                     ></canvas>
                   </div>
                   <div class="clear-btn pt-2 d-flex justify-content-end">
-                    <button class="btn btn-success btn-lg" id="clear">
-                      <span>ลบลายเซ็น</span>
+                    <button
+                      class="btn btn-outline-danger btn-lg"
+                      style="border-width: medium"
+                      id="clear"
+                    >
+                      <span
+                        ><i class="fa-solid fa-trash pe-2"></i>ลบลายเซ็น</span
+                      >
                     </button>
-                    <button class="btn btn-success btn-lg ms-2" id="clear">
-                      <span>บันทึกลายเซ็น</span>
+                    <button
+                      class="btn btn-outline-success btn-lg ms-2"
+                      style="border-width: medium"
+                      id="clear"
+                    >
+                      <span
+                        ><i class="fa-solid fa-down-to-bracket pe-2"></i
+                        >บันทึกลายเซ็น</span
+                      >
                     </button>
                   </div>
                 </div>
                 <div id="file-upload-container" class="col-sm-12">
                   <label for="fileInput" class="form-label fw-medium py-3">
-                    <i class="fa-solid fa-folder-arrow-up pe-2"></i>
+                    <i
+                      style="color: #ffb74d"
+                      class="fa-solid fa-folder-arrow-up pe-2"
+                    ></i>
                     ต้นฉบับหนังสืออนุญาต ที่ มีลายเซ็นผู้รับปลายทาง
                   </label>
                   <div class="col-12 col-md-3">
@@ -322,7 +365,10 @@
           <form class="needs-validation" novalidate="">
             <div class="row g-3">
               <h4 class="my-2 fw-mediumm">
-                <i class="fa-sharp fa-solid fa-truck-container"></i>
+                <i
+                  style="color: #e2252b"
+                  class="fa-sharp fa-solid fa-truck-container"
+                ></i>
                 ระบุทะเบียนยานพาหนะ
               </h4>
               <hr class="my-0" />
@@ -339,6 +385,7 @@
                   />
                   <label class="form-check-label" for="signatureOption"
                     ><i
+                      style="color: #ba68c8"
                       class="fa-sharp fa-solid fa-binary-circle-check pe-2"
                     ></i
                     >เลขทะเบียนยานพาหนะตรงกับหนังสืออนุญาตขนย้าย</label
@@ -355,6 +402,7 @@
                   />
                   <label class="form-check-label" for="uploadOption"
                     ><i
+                      style="color: #9575cd"
                       class="fa-sharp fa-regular fa-sensor-triangle-exclamation pe-2"
                     ></i
                     >เลขทะเบียนยานพาหนะไม่ตรงกับหนังสืออนุญาตขนย้าย</label
@@ -367,7 +415,10 @@
                 >
                   <div>
                     <label for="fileInput" class="form-label fw-medium py-3">
-                      <i class="fas fa-truck fa-flip-horizontal"></i>
+                      <i
+                        style="color: #ff5722"
+                        class="fas fa-truck fa-flip-horizontal"
+                      ></i>
                       ยานพาหนะ
                     </label>
                     <div class="wrapper">
@@ -379,7 +430,10 @@
                 </div>
                 <div id="uploadContent" class="col-sm-12" style="display: none">
                   <label for="fileInput" class="form-label fw-medium py-3">
-                    <i class="fa-solid fa-folder-arrow-up pe-2"></i>
+                    <i
+                      style="color: #ffb74d"
+                      class="fa-solid fa-folder-arrow-up pe-2"
+                    ></i>
                     ยานพาหนะ
                   </label>
                   <div class="col-12 col-md-3">
@@ -394,7 +448,7 @@
                   </div>
                   <label
                     for="firstName"
-                    class="form-label"
+                    class="form-label fs-6"
                     style="color: #a6b0cf"
                   >
                     ภาพถ่ายยานพาหนะที่ใช้ในการขนย้ายซึ่งมองเห็นหมายเลขทะเบียนอย่างชัดเจน
@@ -417,13 +471,13 @@
           <form class="needs-validation" novalidate="">
             <div class="row g-3">
               <h5 class="mb-1 fw-mediumm">
-                <i class="fa-solid fa-gift"></i>
+                <i style="color: #8bc34a" class="fa-solid fa-gift"></i>
                 ยืนยันรับสินค้าปลายทาง
               </h5>
               <hr class="my-0" />
               <div class="col-sm-12">
                 <span
-                  class="badge d-flex align-items-center my-2 mt-0 p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded p-3"
+                  class="badge d-flex mt-2 align-items-center my-2 mt-0 p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded p-3"
                   style="overflow: hidden"
                 >
                   <i class="fa-solid fa-earth-asia pe-2"></i>
@@ -433,7 +487,7 @@
                 </span>
 
                 <label for="firstName" class="form-label fw-medium py-2">
-                  <i class="fa-solid fa-briefcase"></i>
+                  <i style="color: #8d6e63" class="fa-solid fa-briefcase"></i>
                   ยืนยันรับสินค้าปลายทาง
                 </label>
                 <div class="mb-3">
@@ -480,13 +534,19 @@
           <form class="needs-validation" novalidate="">
             <div class="row g-3">
               <h5 class="mb-1 fw-mediumm">
-                <i class="fa-solid fa-bell-exclamation"></i>
+                <i
+                  style="color: #fbc02d"
+                  class="fa-solid fa-bell-exclamation"
+                ></i>
                 กรณีผู้รับปลายทางไม่รับสินค้า
               </h5>
               <hr class="my-0" />
               <div class="col-sm-12">
-                <label for="firstName" class="form-label fw-medium py-2">
-                  <i class="fa-sharp fa-solid fa-comments"></i>
+                <label for="firstName" class="form-label fw-medium pb-3 py-2">
+                  <i
+                    style="color: #4fc3f7"
+                    class="fa-sharp fa-solid fa-comments"
+                  ></i>
                   เหตุผลการรับไม่รับสินค้า
                 </label>
                 <div class="mb-3">
@@ -506,7 +566,10 @@
               <hr class="my-4" />
 
               <button class="w-100 btn btn-success btn-lg" type="submit">
-                <i class="fa-sharp fa-solid fa-floppy-disk"></i>
+                <i
+                  style="color: #f6f6f6"
+                  class="fa-sharp fa-solid fa-floppy-disk"
+                ></i>
                 <b>บันทึก</b>
               </button>
             </div>
